@@ -1,7 +1,7 @@
 :root {
   --gold: #b38a45;
   --light-gold: #e6c98a;
-  --cream: #f8f5ef;
+  --cream: #fff4f0;
   --dark: #29251f;
   --muted: #81796c;
   --white: #fff;
@@ -31,7 +31,7 @@ a {
 
 .site-header {
   align-items: center;
-  background: rgba(248, 245, 239, .95);
+  background: rgba(255, 244, 240, .95);
   display: flex;
   justify-content: space-between;
   padding: 22px 7%;
