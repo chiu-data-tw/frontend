@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURELIA｜黃金金飾</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">AURELIA</a>
+
+    <nav class="nav">
+      <a href="#products">新品上市</a>
+      <a href="#products">黃金項鍊</a>
+      <a href="#products">戒指</a>
+      <a href="#about">品牌故事</a>
+    </nav>
+
+    <button class="cart-button" id="cartButton">
+      購物袋 <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">TIMELESS GOLDEN MOMENTS</p>
+        <h1>讓每一刻<br><em>閃耀成為永恆</em></h1>
+        <p class="hero-text">
+          精選高品質黃金金飾，為日常生活增添溫柔而恆久的光芒。
+        </p>
+        <a class="primary-button" href="#products">探索系列</a>
+      </div>
+    </section>
+
+    <section class="intro" id="about">
+      <p class="eyebrow">OUR PHILOSOPHY</p>
+      <h2>一件金飾，收藏一段故事</h2>
+      <p>
+        AURELIA 相信，真正動人的珠寶不只裝飾外表，
+        更承載著記憶、祝福與人生的重要時刻。
+      </p>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURATED COLLECTION</p>
+          <h2>經典金飾系列</h2>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">全部</button>
+          <button class="filter" data-filter="necklace">項鍊</button>
+          <button class="filter" data-filter="ring">戒指</button>
+          <button class="filter" data-filter="earring">耳環</button>
+        </div>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="necklace">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=85" alt="晨曦金鍊">
+            <span class="tag">NEW</span>
+          </div>
+          <div class="product-info">
+            <h3>晨曦金鍊</h3>
+            <p>18K 黃金・細緻鎖骨鍊</p>
+            <strong>NT$ 28,800</strong>
+            <button class="add-button" data-name="晨曦金鍊">加入購物袋</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="ring">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=85" alt="日光戒指">
+          </div>
+          <div class="product-info">
+            <h3>日光戒指</h3>
+            <p>純金鍛造・簡約圓弧線條</p>
+            <strong>NT$ 19,800</strong>
+            <button class="add-button" data-name="日光戒指">加入購物袋</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="earring">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=85" alt="流光耳環">
+            <span class="tag">BEST SELLER</span>
+          </div>
+          <div class="product-info">
+            <h3>流光耳環</h3>
+            <p>14K 黃金・輕盈日常耳針</p>
+            <strong>NT$ 16,800</strong>
+            <button class="add-button" data-name="流光耳環">加入購物袋</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="necklace">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=85" alt="恆星項鍊">
+          </div>
+          <div class="product-info">
+            <h3>恆星項鍊</h3>
+            <p>18K 黃金・星芒鑽石墜飾</p>
+            <strong>NT$ 35,800</strong>
+            <button class="add-button" data-name="恆星項鍊">加入購物袋</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">JOIN OUR WORLD</p>
+      <h2>訂閱 AURELIA 電子報</h2>
+      <p>接收新品消息、限定優惠與珠寶保養知識。</p>
+      <form id="newsletterForm">
+        <input type="email" placeholder="輸入您的 Email" required>
+        <button type="submit">立即訂閱</button>
+      </form>
+      <small id="formMessage"></small>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> AURELIA Jewelry. All rights reserved.</p>
+    <p>黃金工藝，陪伴每個重要時刻。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
