@@ -133,6 +133,24 @@
     <p>黃金工藝，陪伴每個重要時刻。</p>
   </footer>
 
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-panel" id="cartPanel" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="cart-header">
+      <h2 id="cartTitle">您的購物袋</h2>
+      <button class="cart-close" id="cartClose" type="button" aria-label="關閉購物袋">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">您的購物袋目前是空的。</p>
+    </div>
+    <div class="cart-summary">
+      <div>
+        <span>商品總計</span>
+        <strong id="cartTotal">NT$ 0</strong>
+      </div>
+      <button class="checkout-button" id="checkoutButton" type="button" disabled>前往結帳</button>
+    </div>
+  </aside>
+
   <script src="script.js"></script>
 </body>
 </html>
