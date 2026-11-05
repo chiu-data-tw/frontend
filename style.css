@@ -1,9 +1,9 @@
 :root {
   --gold: #b38a45;
   --light-gold: #e6c98a;
-  --cream: #fff4f0;
-  --dark: #29251f;
-  --muted: #81796c;
+  --cream: #211e1a;
+  --dark: #f5eee4;
+  --muted: #b8aea0;
   --white: #fff;
 }
 
@@ -31,7 +31,7 @@ a {
 
 .site-header {
   align-items: center;
-  background: rgba(255, 244, 240, .95);
+  background: rgba(33, 30, 26, .95);
   display: flex;
   justify-content: space-between;
   padding: 22px 7%;
@@ -281,7 +281,7 @@ h1 em {
 
 .primary-button {
   background: var(--light-gold);
-  color: var(--dark);
+  color: #29251f;
   display: inline-block;
   padding: 12px 30px;
 }
@@ -352,7 +352,7 @@ h1 em {
 }
 
 .product-image {
-  background: #e8e1d5;
+  background: #332e27;
   height: 360px;
   overflow: hidden;
   position: relative;
@@ -411,7 +411,7 @@ h1 em {
 }
 
 .newsletter {
-  background: #eee6d8;
+  background: #302a23;
   padding: 85px 20px;
   text-align: center;
 }
@@ -428,7 +428,7 @@ h1 em {
 }
 
 .newsletter input {
-  background: white;
+  background: #f8f2e9;
   border: 0;
   flex: 1;
   outline: 0;
